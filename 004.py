@@ -1,0 +1,10 @@
+msg = input('Write a word.')
+
+print(type(msg))
+print('Just space', msg.isspace())
+print('Number', msg.isnumeric())
+print('Alphabetic', msg.isalpha())
+print('Alphanum', msg.isalnum())
+print('Upper', msg.isupper())
+print('Lower', msg.islower())
+print('Title', msg.istitle())
