@@ -1,6 +1,6 @@
-s = int(0)
-for n in range(1, 7):
-    num = int(input('Enter your number, you have {} of 6.'.format(n)))
-    if(num%2) == 0:
-        s = s + num
-print(s)
+num = int(input('Enter the first number of the Aritimetic Progression.'))
+q = int(input('Enter the iteration of the Progression.'))
+nten = num + (10 - 1)*q
+for n in range(num, nten + q, q):
+    print('{} '.format(n), end=' > ')
+print('Finished')

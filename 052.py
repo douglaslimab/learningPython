@@ -1,6 +1,14 @@
-num = int(input('Enter the first number of the Aritimetic Progression.'))
-q = int(input('Enter the iteration of the Progression.'))
-nten = num + (10 - 1)*q
-for n in range(num, nten + q, q):
-    print('{} '.format(n), end=' > ')
-print('Finished')
+cnt = int(0)
+num = int(input('Enter the number.\n'))
+for n in range(1, num + 1):
+    if num%n == 0:
+        print('\033[33m', end='')
+        cnt += 1
+    else:
+        print('\033[31m', end='')
+    print('{} '.format(n), end='')
+
+if cnt == 2:
+    print('\n\033[m{} is a prime number.'.format(num))
+else:
+    print('\n\033[m{} is not a prime number.'.format(num))
