@@ -1,9 +1,10 @@
+from datetime import datetime
 work_reg = list()
 employee = dict()
 
 employee['name'] = str(input('Name: ')).strip().capitalize()
 birth_year = int(input('Birth year: '))
-employee['age'] = 2021 - birth_year
+employee['age'] = datetime.now().year - birth_year
 employee['register'] =int(input('Register: '))
 if employee['register'] != 0:
     employee['contract_year'] = int(input('Contract year: '))
