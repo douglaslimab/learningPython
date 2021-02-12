@@ -11,5 +11,5 @@ def fator(num, show = False):
             print(f'{num - i} ', end='')
         result *= (num - i)
     return result
-print(fator(4, show=Tx'rue))
+print(fator(4, show=True))
 # help(fator)
