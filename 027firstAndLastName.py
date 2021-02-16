@@ -1,5 +1,5 @@
 name = str(input('Enter your full name:\n')).strip()
-name1 = name.split()
+name1 = name.split(' ')
 print(name1)
 print('First name: {}'.format(name1[0]))
 print('Second name: {}'.format(name1[len(name1) - 1]))
